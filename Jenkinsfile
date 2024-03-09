@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                script {
+                sript {
                     // Compile the .cpp file using shell script
                     sh "g++ -o your_executable PES1UG21CS721-1.cpp"
                 }
