@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Compile the .cpp file using shell script
-                    sh "g++ -o your_executable PES1UG21CS721-1.cpp"
+                    sh "g++ -o your_executable PES1UG21CS721-2.cpp"
                 }
             }
         }
@@ -23,6 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Add deployment steps here
+                echo "Deploy"
             }
         }
     }
